@@ -1,0 +1,8 @@
+{
+  "label": "Employer Guide",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "This is the documentation of whole system"
+  }
+}
