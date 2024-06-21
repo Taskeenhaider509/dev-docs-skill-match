@@ -9,15 +9,17 @@ Skillmatch.tech is an application designed to connect job seekers (candidates) w
 ### Candidate's Perspective
 
 #### Job Application Process
-1. **Without Account:**
-   - Candidates can apply for jobs without logging in or registering.
-   - They provide personal and professional details, including name, current job title, and CV.
-   - Companies receive these applications and can accept or reject them.
-   - Rejected candidates receive a rejection email, while accepted candidates are sent an assessment test.
+  **#Without Account:**
 
-2. **With Account:**
-   - Candidates must register via email, Google, GitHub, or Facebook.
-   - They gain access to an interactive dashboard where they can apply for jobs and view assessment tests.
+     Candidates can apply for jobs without logging in or registering.
+     They provide personal and professional details, including name, current job title, and CV.
+     Companies receive these applications and can accept or reject them.
+     Rejected candidates receive a rejection email, while accepted candidates are sent an assessment test.
+
+**#With Account:**
+
+Candidates must register via email, Google, GitHub, or Facebook.
+They gain access to an interactive dashboard where they can apply for jobs and view assessment tests.
 #### Dashboard Features
 - **Dashboard Tab:** Displays job applications, interviews, and status through graphs and charts.
 - **My Applications Tab:** Shows seven types of application statuses with easy horizontal navigation.

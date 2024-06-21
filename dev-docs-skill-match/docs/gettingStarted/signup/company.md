@@ -18,12 +18,4 @@ sidebar_position: 2
 
    ![image info](../../../static/img/company-plan.gif) 
 
-     - Create and manage job listings under the "Job Listing" tab.
-  
-      **1.** Click on "Job Listing" tab.
-
-      **2.** Click on "Create Job Post" button.
-
-      ![image info](../../../static/img/findJobs.png) 
-
 Skillmatch.tech aims to provide a straightforward and user-friendly sign-up process for both candidates and employers, ensuring an efficient and effective job matching experience.

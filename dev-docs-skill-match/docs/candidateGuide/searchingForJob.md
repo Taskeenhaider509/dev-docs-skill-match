@@ -5,7 +5,7 @@ sidebar_position: 3
 # Searching for Job
 **Applying for Jobs:**
    - Apply for jobs directly through the platform:
-     - **For non-registration users:** Enter required details and submit application.
+     - **For non-registered users:** Enter required details and submit application.
   
      ![image info](../../static/img/without-log-find-job.gif)
 
