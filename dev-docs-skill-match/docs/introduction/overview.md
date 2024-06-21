@@ -18,7 +18,6 @@ Skillmatch.tech is an application designed to connect job seekers (candidates) w
 2. **With Account:**
    - Candidates must register via email, Google, GitHub, or Facebook.
    - They gain access to an interactive dashboard where they can apply for jobs and view assessment tests.
-
 #### Dashboard Features
 - **Dashboard Tab:** Displays job applications, interviews, and status through graphs and charts.
 - **My Applications Tab:** Shows seven types of application statuses with easy horizontal navigation.
@@ -28,6 +27,8 @@ Skillmatch.tech is an application designed to connect job seekers (candidates) w
 - **Settings Tab:** Contains personal details, CV/resume updates, email updates, password changes, and notification settings.
 - **Help Center Tab:** Provides contact with the Skillmatch team for support and issue resolution.
 
+**Here is Example**
+![image info](../../static/img/dashboard-candidate-side.png)
 ### Company's Perspective
 
 #### Registration and Plans
@@ -41,6 +42,9 @@ Skillmatch.tech is an application designed to connect job seekers (candidates) w
 - **Assessments Tab:** Create and manage assessments. View candidate assessment statuses (Not Started, In Progress, Completed).
 - **Tests Tab:** Create tests with BASIC and ADVANCE options.
 - **Questions Tab:** View and filter questions by type, difficulty, and creator. Create new questions.
+
+**Here is Example**
+  ![image info](../../static/img/company-sidebar.png)
 - **Settings Tab:** Contains:
   - **Overview:** Edit company profile, view assessments, invoices, and plans.
   - **Profile:** Edit company profile and attach verification documents.
@@ -52,5 +56,8 @@ Skillmatch.tech is an application designed to connect job seekers (candidates) w
   - **Domain:** Manage company domains for email integration.
   - **SMTP Email:** Configure email settings for sending emails.
   - **Support:** Contact the Skillmatch team for support.
+
+**Here is Example**
+  ![image info](../../static/img/company-settings-navbar.png)
 
 Skillmatch.tech aims to streamline the job application process for candidates and simplify talent acquisition for companies with its comprehensive and well-designed platform.

@@ -22,6 +22,9 @@ Skillmatch.tech provides a user-friendly interface for both candidates (job seek
      - **Settings:** Update personal information, manage notifications, and change password.
      - **Help Center:** Contact support for assistance.
 
+
+    ![image info](../../static/img/public-candidate-overview.gif) 
+
 2. **Applying for Jobs**
 
    - **Find Jobs Tab:**
@@ -70,6 +73,8 @@ Skillmatch.tech provides a user-friendly interface for both candidates (job seek
      - **Questions:** Create and manage questions for assessments.
      - **Settings:** Configure company settings, user roles, notifications, security, API keys, and integrations.
      - **Support:** Contact Skillmatch.tech support for assistance.
+  
+   ![image info](../../static/img/navigate-company-tabs.gif)  
 
 2. **Company Profile**
 
@@ -101,19 +106,5 @@ Skillmatch.tech provides a user-friendly interface for both candidates (job seek
    
    - **Support:**
      - Contact Skillmatch.tech support for assistance or issue resolution.
-
-### General Navigation Tips
-
-- **Tabs and Sidebar Navigation:**
-  - Use the sidebar tabs (Dashboard, Company Profile, Job Listing, Candidates, Assessments, Tests, Questions, Settings, Support) for easy navigation.
-  
-- **Filters and Search:**
-  - Use filters to refine searches (job type, category, salary, location) in the Find Jobs and Browse Companies tabs.
-  
-- **Profile Management:**
-  - Update your profile regularly and ensure all details are up to date.
-  
-- **Support and Help:**
-  - Use the Help Center or Support tab to contact Skillmatch.tech for assistance or to report issues.
 
 Skillmatch.tech aims to provide an intuitive and efficient user experience, whether you are a job seeker looking for opportunities or an employer managing recruitment processes. The platform's navigation is designed to be straightforward and user-friendly, ensuring you can easily find what you need and accomplish your tasks efficiently.

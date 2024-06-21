@@ -1,0 +1,8 @@
+{
+  "label": "Candidate Guide",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "This is the documentation of whole system"
+  }
+}
