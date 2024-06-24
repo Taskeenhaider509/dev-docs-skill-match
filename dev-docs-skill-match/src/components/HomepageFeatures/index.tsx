@@ -1,67 +1,76 @@
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
-import styles from './styles.module.css';
+// src/components/HomepageFeatures.tsx
+import React from 'react';
+import { FaBeer, FaCoffee, FaApple } from 'react-icons/fa'; // Import icons from react-icons
 
-type FeatureItem = {
+interface FeatureProps {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-  description: JSX.Element;
-};
+  icon: React.ReactNode;
+}
 
-const FeatureList: FeatureItem[] = [
+const Companies: FeatureProps[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
+    title: 'Onboarding and Implementation Center',
+    icon: <FaBeer />, // Use an icon instead of an image URL
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
+    title: 'CodeSignal Interview',
+    icon: <FaCoffee />, // Use an icon instead of an image URL
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
+    title: 'CodeSignal Pre-screen',
+    icon: <FaApple />, // Use an icon instead of an image URL
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+const Candidates: FeatureProps[] = [
+  {
+    title: 'CodeSignal Learn: FAQs',
+    icon: <FaBeer />, // Use an icon instead of an image URL
+  },
+  {
+    title: 'CodeSignal Interview: Candidate FAQs',
+    icon: <FaCoffee />, // Use an icon instead of an image URL
+  },
+  {
+    title: 'CodeSignal PreScreen: Candidate FAQs',
+    icon: <FaApple />, // Use an icon instead of an image URL
+  },
+];
+
+function Feature({ icon, title }: FeatureProps) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+    <div className="featureCard">
+      <div className="featureIconContainer">
+        {icon}
       </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
+      <p className="featureTitle">{title}</p>
     </div>
   );
 }
 
-export default function HomepageFeatures(): JSX.Element {
+export function HomeCompanyFeatures(): JSX.Element {
   return (
-    <section className={styles.features}>
+    <section className="features">
       <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+        <h2>For Companies</h2>
+        <div className="featuresContainer">
+          {Companies.map((feature, idx) => (
+            <Feature key={idx} {...feature} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function HomeCandidateFeatures(): JSX.Element {
+  return (
+    <section className="features">
+      <div className="container">
+        <h2>For Candidates</h2>
+        <div className="featuresContainer">
+          {Candidates.map((feature, idx) => (
+            <Feature key={idx} {...feature} />
           ))}
         </div>
       </div>

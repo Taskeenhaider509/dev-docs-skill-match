@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -6,17 +8,20 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #356F66;
+  --ifm-color-primary-dark: #356F66;
+  --ifm-color-primary-darker: #356F66;
+  --ifm-color-primary-darkest: #356F66;
+  --ifm-color-primary-light: #356F66;
+  --ifm-color-primary-lighter: #356F66;
+  --ifm-color-primary-lightest: #356F66;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
-
+body{
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
@@ -28,3 +33,130 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+
+/* SearchBar Start */
+.searchBar {
+  display: flex;
+  align-items: center;
+  border:none;
+  border-radius: 4px;
+  background-color: #fff;
+  width: 47.5%;
+  height: 50px;
+}
+
+.searchIcon {
+  margin-top: 0.4rem;
+  margin-left: 0.8rem;
+  margin-right: 0.3rem;
+  color: #356F66;
+  font-size: 24px;
+}
+
+.searchInput {
+  flex: 1;
+  border: none;
+  outline: none;
+}
+
+.searchButton {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100px;
+  height: 50px;
+  font-size: 14px;
+}
+
+.searchButton:hover {
+  background-color: rgb(61, 56, 56);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+::placeholder {
+  font-size: 15px;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+  font-size: 15px;
+}
+
+/* SearchBar End */
+
+/* Cards Start */
+.features {
+  padding: 2rem 0;
+}
+
+.featuresContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 34px;
+  padding-top: 2rem;
+}
+
+.featureCard {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  padding: 1rem;
+  width: 350px;
+  height: 130px; /* Set a fixed height for landscape effect */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.featureImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.featureIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  padding: 7px; 
+  position: absolute;
+  top: 0%;
+  transform: translateY(-50%);
+
+}
+
+
+.featureImage {
+  width: 50px;
+  height: 50px;
+}
+
+.featureTitle {
+  font-size: 18px;
+  font-weight: 500;
+  margin:auto;
+  margin-top: 25px;
+}
+
+h2{
+  font-weight: 600px;
+  font-size: 30px;
+}
+
+/* Cards End  */

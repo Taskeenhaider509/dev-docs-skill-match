@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Skill Match',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Assess, Advance, Achieve: Your Path to Engineering Excellence',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
