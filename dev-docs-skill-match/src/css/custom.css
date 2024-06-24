@@ -8,13 +8,13 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #356F66;
-  --ifm-color-primary-dark: #356F66;
-  --ifm-color-primary-darker: #356F66;
-  --ifm-color-primary-darkest: #356F66;
-  --ifm-color-primary-light: #356F66;
-  --ifm-color-primary-lighter: #356F66;
-  --ifm-color-primary-lightest: #356F66;
+  --ifm-color-primary: #2DC29E;
+  --ifm-color-primary-dark: #2DC29E;
+  --ifm-color-primary-darker: #2DC29E;
+  --ifm-color-primary-darkest: #2DC29E;
+  --ifm-color-primary-light: #2DC29E;
+  --ifm-color-primary-lighter: #2DC29E;
+  --ifm-color-primary-lightest: #2DC29E;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
@@ -75,11 +75,17 @@ body{
 .searchButton:hover {
   background-color: rgb(61, 56, 56);
 }
-
-.container {
+.input {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.container-t {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
 }
 
 ::placeholder {

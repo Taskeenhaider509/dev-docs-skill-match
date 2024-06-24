@@ -1,49 +1,71 @@
 // src/components/HomepageFeatures.tsx
-import React from 'react';
-import { FaBeer, FaCoffee, FaApple } from 'react-icons/fa'; // Import icons from react-icons
+import React from "react";
+import { FaBeer, FaCoffee, FaApple } from "react-icons/fa"; // Import icons from react-icons
 
 interface FeatureProps {
   title: string;
+  Link: string;
   icon: React.ReactNode;
 }
 
 const Companies: FeatureProps[] = [
   {
-    title: 'Onboarding and Implementation Center',
+    title: "Company Sign up",
+    Link: "https://dev-docs-skill-match.vercel.app/docs/gettingStarted/signup/candidate",
     icon: <FaBeer />, // Use an icon instead of an image URL
   },
   {
-    title: 'CodeSignal Interview',
+    title: "Company Profile Management",
+    Link: "https://dev-docs-skill-match.vercel.app/docs/employerGuide/companyProfileManagement",
     icon: <FaCoffee />, // Use an icon instead of an image URL
   },
   {
-    title: 'CodeSignal Pre-screen',
+    title: "Manage Job Postings",
+    Link: "https://dev-docs-skill-match.vercel.app/docs/employerGuide/jobPosting",
     icon: <FaApple />, // Use an icon instead of an image URL
   },
+  {
+    title: "Assessment Creation",
+    Link: "https://dev-docs-skill-match.vercel.app/docs/employerGuide/assessmentCreation",
+    icon: <FaApple />, // Use an icon instead of an image URL
+  },
+  {
+    title: "Test Creation",
+    Link: "https://dev-docs-skill-match.vercel.app/docs/employerGuide/testCreation",
+    icon: <FaApple />, // Use an icon instead of an image URL
+  },
+  {
+    title: "Question Creation",
+    Link: "https://dev-docs-skill-match.vercel.app/docs/employerGuide/questionCreation",
+    icon: <FaApple />, // Use an icon instead of an image URL
+  }
 ];
 
 const Candidates: FeatureProps[] = [
   {
-    title: 'CodeSignal Learn: FAQs',
+    title: "Candidate Sign up",
+    Link: "https://dev-docs-skill-match.vercel.app/docs/gettingStarted/signup/candidate",
     icon: <FaBeer />, // Use an icon instead of an image URL
   },
   {
-    title: 'CodeSignal Interview: Candidate FAQs',
+    title: "Profile Management",
+    Link: "https://dev-docs-skill-match.vercel.app/docs/candidateGuide/profileManagement",
     icon: <FaCoffee />, // Use an icon instead of an image URL
   },
   {
-    title: 'CodeSignal PreScreen: Candidate FAQs',
+    title: "Searching for Jobs",
+    Link: "https://dev-docs-skill-match.vercel.app/docs/candidateGuide/searchingForJob",
     icon: <FaApple />, // Use an icon instead of an image URL
-  },
+  }
 ];
 
-function Feature({ icon, title }: FeatureProps) {
+function Feature({ icon, title, Link }: FeatureProps) {
   return (
     <div className="featureCard">
-      <div className="featureIconContainer">
-        {icon}
-      </div>
-      <p className="featureTitle">{title}</p>
+      <div className="featureIconContainer">{icon}</div>
+      <a href={Link} target="_blank" className="featureTitle">
+        {title}
+      </a>
     </div>
   );
 }
@@ -51,7 +73,7 @@ function Feature({ icon, title }: FeatureProps) {
 export function HomeCompanyFeatures(): JSX.Element {
   return (
     <section className="features">
-      <div className="container">
+      <div className="container-t">
         <h2>For Companies</h2>
         <div className="featuresContainer">
           {Companies.map((feature, idx) => (
@@ -66,7 +88,7 @@ export function HomeCompanyFeatures(): JSX.Element {
 export function HomeCandidateFeatures(): JSX.Element {
   return (
     <section className="features">
-      <div className="container">
+      <div className="container-t">
         <h2>For Candidates</h2>
         <div className="featuresContainer">
           {Candidates.map((feature, idx) => (
