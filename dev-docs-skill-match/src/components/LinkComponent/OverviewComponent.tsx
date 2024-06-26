@@ -8,30 +8,13 @@ interface OverviewRowProps {
 
 const OverviewRow: React.FC<OverviewRowProps> = ({ headingNumber, title, description }) => {
     return (
-        <div style={{ display: 'flex', gap: '10px',  marginBottom: '10px', borderRadius: "5px", }}>
-            <div style={{
-                minWidth: '30px',
-                minHeight: '30px',
-                width: '30px',
-                height: '30px',
-                borderRadius: '50%',
-                color: 'white',
-                backgroundColor: 'green',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                marginRight: '10px',
-                background: '#367167',
-                fontWeight: '10px',
-                padding: "0px",
-                fontSize: "12px",
-                lineHeight:"1"
-            }}>
+        <div className='table-row-component'>
+            <div className='table-row-heading-number'>
                 {headingNumber}
             </div>
-            <div style={{display: "flex", gap: "10px"}}>
-                <div style={{ fontWeight: 'bold', fontSize: '15px', width:"100px",                lineHeight:"1", display:"flex", justifyContent:"start", alignItems: "center" }}>{title}</div>
-                <div style={{lineHeight:'1',display:"flex", justifyContent:"start", alignItems: "center" }}>{description}</div>
+            <div className='table-row-content'>
+                <div className='table-row-content-title'>{title}</div>
+                <div className='table-row-content-description'>{description}</div>
             </div>
         </div>
     );
@@ -43,7 +26,7 @@ interface OverviewComponentProps {
 
 const OverviewComponent: React.FC<OverviewComponentProps> = ({ rows }) => {
     return (
-        <div className='table-radius' style={{display:"flex", flexDirection: "column",gap:"13px", justifyItems: "center", padding: '20px', borderRadius: '10px', marginBottom: '20px'}}>
+        <div className='table-radius'>
             {rows.map((row, index) => (
                 <OverviewRow
                     key={index}

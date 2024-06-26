@@ -8,7 +8,6 @@ import {
 import LandingPageSection from "@site/src/components/LandingPage/LandingPageSection"
 import ImproveLanding from "../components/ImproveLandingPage/ImproveLanding";
 function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx("hero hero--primary header-image-bg")}>
       <div className="container input">
@@ -101,7 +100,7 @@ function HomepageHeader() {
         </div>
         <div className="header-icon-heading">
           <span className="first-heading">Common troubleshooting topics: </span>
-          <span>notification, create assessment, test creation</span>
+          <span className="second-heading"><a href="">notification,</a> <a href="">create assessment</a>, <a href=""> test creation </a></span>
         </div>
       </div>
     </header>

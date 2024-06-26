@@ -1,6 +1,4 @@
 import React from "react";
-// import { FaBeer, FaCoffee, FaApple } from "../../../static/img/Profile-Petrol 1.svg"; // Import icons from react-icons
-
 interface FeatureProps {
   title: string;
   Link: string;
@@ -12,19 +10,19 @@ const Companies: FeatureProps[] = [
   {
     title: "Company Sign up",
     Link: "https://dev-docs-skill-match.vercel.app/docs/gettingStarted/signup/candidate",
-    description: "The company is very good",
+    description: "Register your company to access our platform.",
     icon: `<svg width="55" height="38" viewBox="0 0 55 38" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M17.1193 16.2761C20.0999 16.2761 22.5159 13.7571 22.5159 10.6498C22.5159 7.54243 20.0999 5.02344 17.1193 5.02344C14.1388 5.02344 11.7227 7.54243 11.7227 10.6498C11.7227 13.7571 14.1388 16.2761 17.1193 16.2761Z" stroke="#2DC29E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M36.9401 16.2768C40.7104 16.2768 43.7666 13.0902 43.7666 9.15935C43.7666 5.22858 40.7104 2.04199 36.9401 2.04199C33.1698 2.04199 30.1133 5.22858 30.1133 9.15935C30.1133 13.0902 33.1698 16.2768 36.9401 16.2768Z" stroke="#2DC29E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M49.0819 35.9684V33.1552C49.0819 28.4854 45.4661 24.7158 40.9869 24.7158H32.8919C28.4127 24.7158 24.7969 28.4854 24.7969 33.1552V35.9684" stroke="#2DC29E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M19.8198 24.7158H14.4231C9.94388 24.7158 6.32812 28.4854 6.32812 33.1552V35.9684" stroke="#2DC29E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-`
+`,
   },
   {
     title: "Company Profile Management",
     Link: "https://dev-docs-skill-match.vercel.app/docs/employerGuide/companyProfileManagement",
-    description: "The company is very good",
+    description: "Manage and update your company's profile information.",
     icon: `<svg width="55" height="47" viewBox="0 0 55 47" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M27.4742 45.0002C39.3622 45.0002 48.9992 35.3631 48.9992 23.4752C48.9992 11.5872 39.3622 1.9502 27.4742 1.9502C15.5863 1.9502 5.94922 11.5872 5.94922 23.4752C5.94922 35.3631 15.5863 45.0002 27.4742 45.0002Z" stroke="#2DC29E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M41.1097 40.1207C37.6896 36.5093 32.8345 34.2373 27.4532 34.2373C22.072 34.2373 17.2409 36.5093 13.7969 40.1207" stroke="#2DC29E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -35,7 +33,7 @@ const Companies: FeatureProps[] = [
   {
     title: "Manage Job Postings",
     Link: "https://dev-docs-skill-match.vercel.app/docs/employerGuide/jobPosting",
-    description: "The company is very good",
+    description: "Create, edit, and manage job listings.",
     icon: `<svg width="57" height="54" viewBox="0 0 57 54" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M22.5834 32.9932H8.5V47.0766H22.5834V32.9932Z" stroke="#2DC29E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M48.4033 40.0346C48.4033 35.4974 44.7251 31.8193 40.188 31.8193C35.6508 31.8193 31.9727 35.4974 31.9727 40.0346C31.9727 44.5718 35.6508 48.2499 40.188 48.2499C44.7251 48.2499 48.4033 44.5718 48.4033 40.0346Z" stroke="#2DC29E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -48,7 +46,7 @@ const Companies: FeatureProps[] = [
   {
     title: "Assessment Creation",
     Link: "https://dev-docs-skill-match.vercel.app/docs/employerGuide/assessmentCreation",
-    description: "The company is very good",
+    description: "Design and develop assessments for candidates.",
     icon: `<svg width="54" height="40" viewBox="0 0 54 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M35.3266 5.77637L16.9844 24.1186V29.767H22.6327L40.9749 11.4247" stroke="#2DC29E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M44.926 17.7913V33.7584C44.926 35.9539 43.1297 37.7502 40.9342 37.7502H12.9918C10.7963 37.7502 9 35.9539 9 33.7584V5.81599C9 3.62051 10.7963 1.82422 12.9918 1.82422H28.9589" stroke="#2DC29E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -59,7 +57,7 @@ const Companies: FeatureProps[] = [
   {
     title: "Test Creation",
     Link: "https://dev-docs-skill-match.vercel.app/docs/employerGuide/testCreation",
-    description: "The company is very good",
+    description: "Create and configure tests for job applicants.",
     icon: `<svg width="55" height="43" viewBox="0 0 55 43" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M8 7.41699H14.6517" stroke="#2DC29E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M20.026 12.8333C23.0175 12.8333 25.4426 10.4082 25.4426 7.41665C25.4426 4.42512 23.0175 2 20.026 2C17.0345 2 14.6094 4.42512 14.6094 7.41665C14.6094 10.4082 17.0345 12.8333 20.026 12.8333Z" stroke="#2DC29E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -77,7 +75,7 @@ const Companies: FeatureProps[] = [
   {
     title: "Question Creation",
     Link: "https://dev-docs-skill-match.vercel.app/docs/employerGuide/questionCreation",
-    description: "The company is very good",
+    description: "Develop questions for assessments and tests.",
     icon: `<svg width="56" height="48" viewBox="0 0 56 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M30.7649 20.9834L13.5781 38.1703" stroke="#2DC29E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M32.7812 6.17871C37.7403 9.67927 42.0674 13.9821 45.5679 18.9655" stroke="#2DC29E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -93,7 +91,7 @@ const Candidates: FeatureProps[] = [
   {
     title: "Candidate Sign up",
     Link: "https://dev-docs-skill-match.vercel.app/docs/gettingStarted/signup/candidate",
-    description: "The company is very good",
+    description: "Register as a candidate to apply for jobs.",
     icon: `<svg width="55" height="38" viewBox="0 0 55 38" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M17.1193 16.2761C20.0999 16.2761 22.5159 13.7571 22.5159 10.6498C22.5159 7.54243 20.0999 5.02344 17.1193 5.02344C14.1388 5.02344 11.7227 7.54243 11.7227 10.6498C11.7227 13.7571 14.1388 16.2761 17.1193 16.2761Z" stroke="#2DC29E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M36.9401 16.2768C40.7104 16.2768 43.7666 13.0902 43.7666 9.15935C43.7666 5.22858 40.7104 2.04199 36.9401 2.04199C33.1698 2.04199 30.1133 5.22858 30.1133 9.15935C30.1133 13.0902 33.1698 16.2768 36.9401 16.2768Z" stroke="#2DC29E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -105,7 +103,7 @@ const Candidates: FeatureProps[] = [
   {
     title: "Profile Management",
     Link: "https://dev-docs-skill-match.vercel.app/docs/candidateGuide/profileManagement",
-    description: "The company is very good",
+    description: "Manage and update your personal profile information.",
     icon: `<svg width="55" height="47" viewBox="0 0 55 47" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M27.4742 45.0002C39.3622 45.0002 48.9992 35.3631 48.9992 23.4752C48.9992 11.5872 39.3622 1.9502 27.4742 1.9502C15.5863 1.9502 5.94922 11.5872 5.94922 23.4752C5.94922 35.3631 15.5863 45.0002 27.4742 45.0002Z" stroke="#2DC29E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M41.1097 40.1207C37.6896 36.5093 32.8345 34.2373 27.4532 34.2373C22.072 34.2373 17.2409 36.5093 13.7969 40.1207" stroke="#2DC29E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -116,7 +114,7 @@ const Candidates: FeatureProps[] = [
   {
     title: "Searching for Jobs",
     Link: "https://dev-docs-skill-match.vercel.app/docs/candidateGuide/searchingForJob",
-    description: "The company is very good",
+    description: "Explore and search for job opportunities.",
     icon: `<svg width="55" height="47" viewBox="0 0 55 47" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M27.4742 45.0002C39.3622 45.0002 48.9992 35.3631 48.9992 23.4752C48.9992 11.5872 39.3622 1.9502 27.4742 1.9502C15.5863 1.9502 5.94922 11.5872 5.94922 23.4752C5.94922 35.3631 15.5863 45.0002 27.4742 45.0002Z" stroke="#2DC29E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M41.1097 40.1207C37.6896 36.5093 32.8345 34.2373 27.4532 34.2373C22.072 34.2373 17.2409 36.5093 13.7969 40.1207" stroke="#2DC29E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -125,12 +123,26 @@ const Candidates: FeatureProps[] = [
 `, // Use an icon instead of an image URL
   },
 ];
-const Feature: React.FC<FeatureProps> = ({ title, Link, description, icon }) => {
+
+const Feature: React.FC<FeatureProps> = ({
+  title,
+  Link,
+  description,
+  icon,
+}) => {
   return (
     <div className="featureCard">
-      <div className="featureIconContainer" dangerouslySetInnerHTML={{ __html: icon }}></div>
+      <div
+        className="featureIconContainer"
+        dangerouslySetInnerHTML={{ __html: icon }}
+      ></div>
       <div className="featureDetails">
-        <a href={Link} target="_blank" rel="noopener noreferrer" className="featureTitle">
+        <a
+          href={Link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="featureTitle"
+        >
           {title}
         </a>
         <div className="cards-description">{description}</div>
@@ -153,12 +165,15 @@ export function HomeCompanyFeatures(): JSX.Element {
     </section>
   );
 }
+
 export function HomeCandidateFeatures(): JSX.Element {
   return (
     <section className="features">
       <div className="container-t">
         <div className="featuresContainer">
-        <h2 className="landing-page-cards-heading">Popular candidate topics</h2>
+          <h2 className="landing-page-cards-heading">
+            Popular candidate topics
+          </h2>
           {Candidates.map((feature, idx) => (
             <Feature key={idx} {...feature} />
           ))}

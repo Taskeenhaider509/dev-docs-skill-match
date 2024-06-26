@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 /**
  * Any CSS included here will be global. The classic template
@@ -19,7 +19,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-style: normal;
 }
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -34,11 +34,10 @@ body {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* SearchBar Start */
+/* Header Section Start */
 .searchBar {
   display: flex;
   align-items: center;
-  /* border: none; */
   border-radius: 10px;
   background-color: #FFFFFF;
   width: 635px;
@@ -48,13 +47,18 @@ body {
   margin-top: 3rem;
   margin-bottom: 1rem;
   padding: 10px, 20px, 10px, 20px;
-  /* background-color: red; */
 }
 
 .first-heading{
   font-weight: 600;
   font-size: 16px;
   line-height: 18.4px;
+}
+
+.second-heading > a{
+  color: white;
+  line-height: 18.4px;
+  text-decoration: underline;
 }
 
 .searchIcon {
@@ -67,14 +71,21 @@ body {
 
 .searchInput {
   flex: 1;
-  padding-top: 5px;
   border: none;
   outline: none;
+  height: 47px;
+  font-family: "Urbanist", sans-serif;
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid #D6DDEB;
 }
 
+
+
+
+
 .input {
-  /* padding-top: 3rem; */
-  /* padding-bottom: 3rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,18 +93,20 @@ body {
 
 ::placeholder {
   font-size: 18px;
-  opacity: 1; /* Firefox */
+  opacity: 1;
+  /* vertical-align: middle; */
 }
 
 ::-ms-input-placeholder {
-  /* Edge 12 -18 */
   font-size: 15px;
+  vertical-align: middle;
 }
 
-/* SearchBar End */
+/* Header Section End */
+
+
 
 /* Cards Start */
-
 .featureImageContainer {
   display: flex;
   justify-content: center;
@@ -106,12 +119,11 @@ body {
   height: 50px;
 }
 
-h2 {
-  font-weight: 600px;
-  font-size: 30px;
-}
-
 /* Cards End  */
+
+
+
+
 
 .hash-link {
   display: none;
@@ -129,19 +141,87 @@ h2 {
   display: unset !important;
 }
 
+
+
+
+
+/* OverviewComponent Starts */
 .table-radius {
   -webkit-box-shadow: 0px 0px 9px 1px rgba(135, 135, 135, 1);
   -moz-box-shadow: 0px 0px 9px 1px rgba(135, 135, 135, 1);
-  box-shadow: 0px 0px 4px 0px rgba(135, 135, 135, 1);
+  box-shadow: 0px 0px 2px 0px rgba(135, 135, 135, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  justify-items: center;
+  padding: 20px 0px;
+  border-radius: 10px;
+  margin-bottom: 20px; 
+  border: 1px solid rgba(135, 135, 135, 1);
+}
+
+.table-row-component {
+  display: flex;
+  gap: 10px;
+
+  padding-left: 20px;
+  /* margin-left: 20px; */
+  /* margin-bottom: 10px;
+  border-radius: 5px; */
+}
+
+.table-row-component:not(:last-child) {
+  border-bottom: 1px solid rgba(135, 135, 135, 1);
+  padding-bottom: 16px;
 }
 
 
 
+.table-row-heading-number {
+  min-width: 30px;
+  min-height: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+  background-color: #367167;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-size: 12px;
+  line-height: 1;
+}
+
+
+.table-row-content {
+display: flex;
+gap: 10px;
+}
+
+.table-row-content-title{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-weight: bold;
+  font-size: 15px;
+  width: 100px;
+  line-height: 1;
+}
+
+.table-row-content-description {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  line-height: 1;
+}
+/* OverviewComponet Ends */
 
 
 
 
 
+/* HomePageFeatures Starts */
 .header-image-bg {
   background-image: url("../../static/img/backgound-image-header.png");
   background-size: cover;
@@ -153,20 +233,19 @@ h2 {
 
 .container-t {
   max-width: 1200px;
-  /* margin: 0 auto; */
-  /* width: 540px; */
 }
 
 .landing-page-cards-heading {
   text-align: left;
   margin-bottom: 2rem;
   padding-left: 10px;
+  font-size: 32px;
+  font-weight: 700;
 }
 
 .featuresContainer {
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
   justify-content: space-between;
 }
 
@@ -180,7 +259,6 @@ h2 {
   padding: 20px;
   width: 540px;
   max-width: 540px;
-  /* align-items: center; */
   height: 114px;
 }
 
@@ -192,13 +270,15 @@ h2 {
 
 .featureDetails {
   flex: 1;
+  width: 440px;
 }
 
 .featureTitle {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 600;
   margin-bottom: 10px;
   color: black;
+  line-height: 24px;
   text-decoration: none;
 }
 
@@ -208,7 +288,9 @@ h2 {
 
 .cards-description {
   font-size: 16px;
-  color: #555;
+  font-weight: 400;
+  color: #6F6F6F;
+  line-height: 19.2px;
 }
 
 .landing-page-cards {
@@ -217,6 +299,7 @@ h2 {
   gap: 3rem;
   background-color: #E0F8DE;
 }
+/* HomePageFeatures Ends */
 
 
 
@@ -230,20 +313,20 @@ h2 {
 
 
 
-
+/* LandingPageSection Starts */
 .container-landingPage {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the container horizontally */
+  align-items: center;
   margin: auto;
-  max-width: 1150px; /* Adjust the width as needed */
+  max-width: 1150px; 
   background-color: white;
   padding: 20px;
 }
 
 .columnLayout {
   display: flex;
-  flex-direction: row; /* Ensure columns are side by side */
+  flex-direction: row; 
   width: 100%;
 }
 
@@ -251,23 +334,20 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start; /* Align items to the left */
+  align-items: flex-start;
   flex: 1;
   padding-top: 40px;
   padding-bottom: 40px;
   margin: 0 10px;
 }
 
-/* .row {
-  margin: 10px 0;
-} */
-
 .roundedButton {
-  padding: 10px 20px;
+  padding: 12px, 20px, 12px, 20px;
+  width: 225px;
+  height: 46px;
   border-radius: 30px;
   border: none;
   background-color: #2dc29e;
-  color: white;
   gap: 10px;
   font-weight: 600;
   font-size: 18px;
@@ -275,31 +355,48 @@ h2 {
   cursor: pointer;
 }
 
+.landing-page-button-anchor {
+  color: white;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.6px;
+}
+
+.landing-page-section-paragrph {
+  width: 448px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+}
+
+.landing-page-section-heading {
+  font-family: "Urbanist", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+}
+
+.landing-page-button-anchor:hover {
+  color: white;
+}
+
 .align-landingpage-right {
   margin-left: 5rem;
 }
+/* LandingPageSection Ends */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ImproveLanding Section Starts */
 .bg-secondary {
-  background-color: #2DC29E; /* Assuming a secondary background color, update as needed */
+  background-color: #2DC29E;
+  display: flex;
+  justify-content: center;
 }
 
 .custom-container {
   padding-top: 60px;
+  width: 1044px;
 }
 
 @media (min-width: 768px) {
@@ -329,7 +426,7 @@ h2 {
 }
 
 .font-bold {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .mt-10 {
@@ -345,7 +442,7 @@ h2 {
 }
 
 .md\:text-2xl {
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 
 .font-medium {
@@ -384,10 +481,6 @@ h2 {
   padding-top: 30px;
 }
 
-.md\:pt-46 {
-  padding-top: 46px;
-}
-
 .link {
   display: inline-block;
   border-radius: 30px;
@@ -404,13 +497,14 @@ h2 {
 
 .md\:link {
   padding: 16px 24px;
-  font-size: 1.25rem;
+  font-size: 20px;
+  font-weight: 600;
   line-height: 24px;
 }
 
 .link-request-demo {
   background-color: white;
-  color: #343a40; /* Neutral-800 */
+  color: #343a40; 
 }
 
 .link-start-free-trial {
@@ -419,5 +513,175 @@ h2 {
 
 .link-start-free-trial:hover {
   background-color: white;
-  color: #343a40; /* Neutral-800 */
+  color: #343a40;
 }
+
+/* ImproveLanding Section Ends */
+
+
+/* Footer Component Starts */
+.footer {
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 33px;
+  gap: 142px
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.footer-column {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-second-column {
+  margin-left: 80px;
+}
+
+.footer-first-column {
+  margin-left: 25px;
+}
+
+.footer-links-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  width: 348px;
+  height: 19px;
+  margin-left: 55px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+}
+
+.footer-link {
+  margin: 0 10px;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-icons-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  width: 100%;
+  margin-right: 16px;
+}
+
+.footer-icon {
+  margin: 0 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000;
+}
+
+.footer-icon:hover {
+  color: #0073e6;
+}
+
+.footer-column-paragraph {
+  margin: 0%;
+  width: 348px;
+  height: 19px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+}
+/* Footer Component Ends */
+
+
+
+
+/* Navbar Component Starts */
+.navbar {
+  background-color: white;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 30px;
+  max-width: 1200px;
+}
+
+.navbar-section {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo .logo {
+  height: 40px;
+}
+
+.navbar-links {
+  display: flex;
+  margin-left: 20px;
+}
+
+.navbar-link {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  font-family: "Urbanist", sans-serif;
+}
+
+.navbar-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-button-request {
+  cursor: pointer;
+  background-color: #FFEBBD;
+  color: black;
+  border: none;
+  padding: 10px 24px 10px 24px;
+  border-radius: 30px;
+  height: 39px;
+  font-size: 16px;
+  font-weight: 600;
+  gap: 10px;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.navbar-button-sign-in {
+  cursor: pointer;
+  background-color: #E0F8DE;
+  color: #367167;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  padding: 10px, 16px, 10px, 16px;
+  border-radius: 400px;
+  width: 80px;
+  height: 36px;
+}
+
+/* Navbar Component Ends */

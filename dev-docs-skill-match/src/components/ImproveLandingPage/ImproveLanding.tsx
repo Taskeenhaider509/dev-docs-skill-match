@@ -13,11 +13,13 @@ const ImproveLanding: React.FC = () => {
         <div className="flex justify-center gap-3 pb-75 pt-30 md:gap-5 md:pb-87 md:pt-46">
           <a
             href={"/book-demo"}
+            target='_blank'
             className="link link-request-demo md:link">
             Request A Demo
           </a>
           <a
-            href={"/signup?type=company"}
+            href={"https://dev-docs-skill-match.vercel.app/docs/category/getting-started"}
+            target='_blank'
             className="link link-start-free-trial md:link">
             Get Started
           </a>

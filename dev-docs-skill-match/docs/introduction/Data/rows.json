@@ -1,55 +1,54 @@
 {
-    "rows": [
-      {
-        "headingNumber": 1,
-        "title": "Overview",
-        "description": "Edit company profile, view assessments, invoices, and plans."
-      },
-      {
-        "headingNumber": 2,
-        "title": "Profile",
-        "description": "Edit company profile and attach verification documents."
-      },
-      {
-        "headingNumber": 3,
-        "title": "Role",
-        "description": "Manage users with admin, interviewer, and recruiter roles."
-      },
-      {
-        "headingNumber": 4,
-        "title": "Notifications",
-        "description": "Send notifications."
-      },
-      {
-        "headingNumber": 5,
-        "title": "Security",
-        "description": "Update security settings like password policies and two-factor authentication."
-      },
-      {
-        "headingNumber": 6,
-        "title": "API Key",
-        "description": "Generate and manage API keys."
-      },
-      {
-        "headingNumber": 7,
-        "title": "Integration",
-        "description": "Integrate with job boards, social media, and HR systems."
-      },
-      {
-        "headingNumber": 8,
-        "title": "Domain",
-        "description": "Manage company domains for email integration."
-      },
-      {
-        "headingNumber": 9,
-        "title": "SMTP Email",
-        "description": "Configure email settings for sending emails."
-      },
-      {
-        "headingNumber": 10,
-        "title": "Support",
-        "description": "Contact the Skillmatch team for support."
-      }
-    ]
-  }
-  
+  "rows": [
+    {
+      "headingNumber": 1,
+      "title": "Overview",
+      "description": "Edit company profile, view assessments, invoices, and plans."
+    },
+    {
+      "headingNumber": 2,
+      "title": "Profile",
+      "description": "Edit company profile and attach verification documents."
+    },
+    {
+      "headingNumber": 3,
+      "title": "Role",
+      "description": "Manage users with admin, interviewer, and recruiter roles."
+    },
+    {
+      "headingNumber": 4,
+      "title": "Notifications",
+      "description": "Send notifications."
+    },
+    {
+      "headingNumber": 5,
+      "title": "Security",
+      "description": "Update security settings like password policies and two-factor authentication."
+    },
+    {
+      "headingNumber": 6,
+      "title": "API Key",
+      "description": "Generate and manage API keys."
+    },
+    {
+      "headingNumber": 7,
+      "title": "Integration",
+      "description": "Integrate with job boards, social media, and HR systems."
+    },
+    {
+      "headingNumber": 8,
+      "title": "Domain",
+      "description": "Manage company domains for email integration."
+    },
+    {
+      "headingNumber": 9,
+      "title": "SMTP Email",
+      "description": "Configure email settings for sending emails."
+    },
+    {
+      "headingNumber": 10,
+      "title": "Support",
+      "description": "Contact the Skillmatch team for support."
+    }
+  ]
+}

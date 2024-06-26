@@ -5,27 +5,27 @@ interface ColumnProps {
   paragraph: string;
   buttonText: string;
   className: string;
-  onButtonClick: () => void;
+  link: string;
 }
 
 const LandingPage: React.FC<ColumnProps> = ({
   heading,
   paragraph,
   buttonText,
-  onButtonClick,
+  link,
   className
 }) => {
   return (
     <div className={`column ${className}`} >
       <div className="row">
-        <h2>{heading}</h2>
+        <h2 className="landing-page-section-heading">{heading}</h2>
       </div>
-      <div className="row">
+      <div className="row landing-page-section-paragrph">
         <p>{paragraph}</p>
       </div>
       <div className="row">
-        <button className="roundedButton" onClick={onButtonClick}>
-          {buttonText}
+        <button className="roundedButton">
+          <a className="landing-page-button-anchor" target="_blank" href={link}>{buttonText}</a>
         </button>
       </div>
     </div>
@@ -33,9 +33,6 @@ const LandingPage: React.FC<ColumnProps> = ({
 };
 
 const LandingPageSection: React.FC = () => {
-  const handleButtonClick = (column: number) => {
-    alert(`Button in column ${column} clicked`);
-  };
 
   return (
     <div className="container-landingPage">
@@ -44,15 +41,15 @@ const LandingPageSection: React.FC = () => {
         className=""
           heading="I'm applying"
           paragraph="If you’re a candidate, start here. Read our candidate guides to help you find your dream job."
+          link="https://dev-docs-skill-match.vercel.app/docs/category/candidate-guide"
           buttonText="Read candidate guides"
-          onButtonClick={() => handleButtonClick(1)}
         />
         <LandingPage
         className="align-landingpage-right"
           heading="I'm hiring"
           paragraph="If you’re an employer, start here. Our guides are there to help you hire your dream candidates."
+          link="https://dev-docs-skill-match.vercel.app/docs/category/employer-guide"
           buttonText="Read employer guides"
-          onButtonClick={() => handleButtonClick(2)}
         />
       </div>
     </div>

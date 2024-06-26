@@ -1,5 +1,4 @@
 import React, { CSSProperties, ReactNode, useState } from 'react';
-
 interface LinkIconComponentProps {
     url: string;
     children?: ReactNode;
@@ -11,8 +10,7 @@ const LinkIconComponent: React.FC<LinkIconComponentProps> = ({ url, children }) 
         marginLeft: '10px',
         color: 'black',
         fontSize: '18px',
-    };
-
+    }
     return (
         <a
             className='anchorlink'
