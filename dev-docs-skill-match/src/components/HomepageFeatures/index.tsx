@@ -155,7 +155,7 @@ export function HomeCompanyFeatures(): JSX.Element {
   return (
     <section className="features">
       <div className="container-t">
-        <h2 className="landing-page-cards-heading">Popular employer topics</h2>
+        <h2 className="landing-page-cards-heading landing-page-mobile-heading">Popular employer topics</h2>
         <div className="featuresContainer">
           {Companies.map((feature, idx) => (
             <Feature key={idx} {...feature} />
@@ -168,7 +168,7 @@ export function HomeCompanyFeatures(): JSX.Element {
 
 export function HomeCandidateFeatures(): JSX.Element {
   return (
-    <section className="features">
+    <section className="features features-candidate">
       <div className="container-t">
         <div className="featuresContainer">
           <h2 className="landing-page-cards-heading">

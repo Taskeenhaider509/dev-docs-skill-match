@@ -38,7 +38,7 @@ const LandingPageSection: React.FC = () => {
     <div className="container-landingPage">
       <div className="columnLayout">
         <LandingPage
-        className=""
+        className="align-landingpage-left"
           heading="I'm applying"
           paragraph="If you’re a candidate, start here. Read our candidate guides to help you find your dream job."
           link="https://dev-docs-skill-match.vercel.app/docs/category/candidate-guide"

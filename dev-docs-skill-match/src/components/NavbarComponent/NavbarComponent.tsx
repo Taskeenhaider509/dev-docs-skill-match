@@ -1,12 +1,14 @@
 import React from "react";
 
 const NavbarComponent: React.FC = () => {
+
+  const liveLink = "http://localhost:3000"
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-section">
           <div className="navbar-logo">
-            <a href="https://dev-docs-skill-match.vercel.app/">
+            <a href={`${liveLink}`}>
             <svg
               className="logo"
               width="170"
@@ -80,17 +82,17 @@ const NavbarComponent: React.FC = () => {
             </a>
           </div>
           <div className="navbar-links">
-            <a href="https://dev-docs-skill-match.vercel.app/docs/intro" className="navbar-link">
+            <a href={`${liveLink}/docs/intro`} className="navbar-link navbar-hidden-components">
               User Docs
             </a>
           </div>
         </div>
         <div className="navbar-section">
-          <a href="#" className="navbar-link">
+          <a href="#" className="navbar-link navbar-hidden-components">
             Submit a ticket
           </a>
-          <button className="navbar-button-request">Request A Demo</button>
-          <button className="navbar-button-sign-in">Sign in</button>
+          <button className="navbar-button-request navbar-hidden-components">Request A Demo</button>
+          <button className="navbar-button-sign-in navbar-hidden-components">Sign in</button>
         </div>
       </div>
     </nav>

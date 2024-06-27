@@ -13,6 +13,7 @@ function HomepageHeader() {
       <div className="container input">
         <span>
           <svg
+            style={{width: "100%"}}
             width="330"
             height="49"
             viewBox="0 0 330 49"
