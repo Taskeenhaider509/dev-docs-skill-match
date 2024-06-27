@@ -2,7 +2,7 @@ import React from "react";
 
 const NavbarComponent: React.FC = () => {
 
-  const liveLink = "http://localhost:3000"
+  const liveLink = "https://dev-docs-skill-match.vercel.app"
   return (
     <nav className="navbar">
       <div className="navbar-container">
