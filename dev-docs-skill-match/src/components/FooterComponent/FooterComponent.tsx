@@ -5,7 +5,9 @@ const FooterComponent: React.FC = () => {
       <div className="footer-row">
         <div className="footer-column footer-first-column">
           <p className="footer-column-paragraph">
+            <span className="footer-column-paragraph-span">
             Copyright © 2024 SkillMatch. All Rights Reserved.
+            </span>
           </p>
         </div>
         <div className="footer-column footer-second-column">

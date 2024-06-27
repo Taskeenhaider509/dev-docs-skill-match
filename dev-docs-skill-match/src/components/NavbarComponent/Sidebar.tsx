@@ -1,54 +1,11 @@
-// import React from "react";
+import React from "react";
+import './style.css';
 
-// const NavbarComponent: React.FC = () => {
-
-//   const liveLink = "http://localhost:3000"
-//   return (
-//     <nav className="navbar">
-//       <div className="navbar-container">
-//         <div className="navbar-section">
-//           <div className="navbar-logo">
-//             <a href={`${liveLink}`}>
-//                 <p>hello</p>
-//             </a>
-//           </div>
-//           <div className="navbar-links">
-//             <a href={`${liveLink}/docs/intro`} className="navbar-link navbar-hidden-components">
-//               User Docs
-//             </a>
-//           </div>
-//         </div>
-//         <div className="navbar-section">
-//           <a href="#" className="navbar-link navbar-hidden-components">
-//             Submit a ticket
-//           </a>
-//           <button className="navbar-button-request navbar-hidden-components">Request A Demo</button>
-//           <button className="navbar-button-sign-in navbar-hidden-components">Sign in</button>
-//         </div>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default NavbarComponent;
-
-import React, { useState } from "react";
-import { FaBars } from "react-icons/fa";
-import Sidebar from "./Sidebar";
-
-const NavbarComponent: React.FC = () => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-  const liveLink = "http://localhost:3000";
-
-  const toggleSidebar = () => {
-    setSidebarOpen(!sidebarOpen);
-  };
-
+const Sidebar: React.FC = () => {
+    const liveLink = "http://localhost:3000";
   return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        <div className="navbar-section">
-          <div className="navbar-logo">
+    <div className="sidebar">
+         <div className="navbar-logo">
             <a href={liveLink}>
             <svg
               className="logo"
@@ -122,26 +79,13 @@ const NavbarComponent: React.FC = () => {
             </svg>
             </a>
           </div>
-          <div className="navbar-links">
-            <a href={`${liveLink}/docs/intro`} className="navbar-link navbar-hidden-components">
-              User Docs
-            </a>
-          </div>
-        </div>
-        <div className="navbar-section navbar-hidden-components">
-          <a href="#" className="navbar-link">
-            Submit a ticket
-          </a>
-          <button className="navbar-button-request">Request A Demo</button>
-          <button className="navbar-button-sign-in">Sign in</button>
-        </div>
-        <div className="navbar-hamburger" onClick={toggleSidebar}>
-          <FaBars />
-        </div>
+      <div className="sidebar-content">
+        <a href="#" className="navbar-link">Submit a ticket</a>
+        <button className="navbar-button-request">Request A Demo</button>
+        <button className="navbar-button-sign-in">Sign in</button>
       </div>
-      {sidebarOpen && <Sidebar />}
-    </nav>
+    </div>
   );
 };
 
-export default NavbarComponent;
+export default Sidebar;
