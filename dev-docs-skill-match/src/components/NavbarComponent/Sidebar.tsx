@@ -2,7 +2,7 @@ import React from "react";
 import './style.css';
 
 const Sidebar: React.FC = () => {
-    const liveLink = "http://localhost:3000";
+    const liveLink = "https://dev-docs-skill-match.vercel.app/";
   return (
     <div className="sidebar">
          <div className="navbar-logo">

@@ -38,7 +38,7 @@ import Sidebar from "./Sidebar";
 
 const NavbarComponent: React.FC = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const liveLink = "http://localhost:3000";
+  const liveLink = "https://dev-docs-skill-match.vercel.app";
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
