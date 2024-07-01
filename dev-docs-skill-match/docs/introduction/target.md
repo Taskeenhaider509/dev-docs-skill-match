@@ -31,7 +31,7 @@ The platform targets companies of all sizes and industries that are looking to h
 ### 3. Human Resources (HR) Professionals
 :::info
 
-HR departments and professionals responsible for recruitment and talent management within organizations. They use [skillmatch.com](https://www.skillmatch.tech) to:
+HR departments and professionals responsible for recruitment and talent management within organizations. They use [skillmatch.tech](https://www.skillmatch.tech) to:
 
 :::
 

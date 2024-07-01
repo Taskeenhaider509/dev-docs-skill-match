@@ -5,9 +5,9 @@ interface LinkIconComponentProps {
 }
 
 const LinkIconComponent: React.FC<LinkIconComponentProps> = ({ url, children }) => {
-    const [iconVisibility, setIconVisibility] = useState("d-none");
+    // const [iconVisibility, setIconVisibility] = useState("d-none");
     const childStyle: CSSProperties = {
-        marginLeft: '10px',
+        marginLeft: '0px',
         color: 'black',
         fontSize: '18px',
     }
@@ -19,9 +19,9 @@ const LinkIconComponent: React.FC<LinkIconComponentProps> = ({ url, children }) 
             rel="noopener noreferrer"
             style={{ textDecorationColor: "black", display: 'inline-flex', alignItems: 'center', paddingTop: '0px', paddingBottom: '0px' }}
         >
-            <span className="linkhover" onMouseLeave={() => setIconVisibility("d-none")} onMouseEnter={() => setIconVisibility("d-unset")} style={childStyle}>{children}</span>
+            {/* <span className="linkhover" onMouseLeave={() => setIconVisibility("d-none")} onMouseEnter={() => setIconVisibility("d-unset")} style={childStyle}>{children}</span> */}
+            <span className="linkhover"  style={childStyle}>{children}</span>
             <svg
-                className={iconVisibility}
                 style={{
                     fontSize: '30px',
                     color: 'black',

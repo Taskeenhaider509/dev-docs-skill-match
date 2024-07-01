@@ -20,7 +20,7 @@ const Companies: FeatureProps[] = [
 `,
   },
   {
-    title: "Company Profile Management",
+    title: "Profile Management",
     Link: "https://dev-docs-skill-match.vercel.app/docs/employerGuide/companyProfileManagement",
     description: "Manage and update your company's profile information.",
     icon: `<svg width="55" height="47" viewBox="0 0 55 47" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -130,24 +130,23 @@ const Feature: React.FC<FeatureProps> = ({
   description,
   icon,
 }) => {
+
   return (
-    <div className="featureCard">
+    <a
+      href={Link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="featureCard"
+    >
       <div
         className="featureIconContainer"
         dangerouslySetInnerHTML={{ __html: icon }}
       ></div>
       <div className="featureDetails">
-        <a
-          href={Link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="featureTitle"
-        >
-          {title}
-        </a>
+        <div className="featureTitle">{title}</div>
         <div className="cards-description">{description}</div>
       </div>
-    </div>
+    </a>
   );
 };
 

@@ -45,7 +45,7 @@ const NavbarComponent: React.FC = () => {
   };
 
   return (
-    <nav className="navbar">
+    <nav className="navbarr">
       <div className="navbar-container">
         <div className="navbar-section">
           <div className="navbar-logo">

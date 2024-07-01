@@ -26,7 +26,7 @@ export default function NavbarMobileSidebarHeader(): JSX.Element {
   return (
     <div className="navbar-sidebar__brand">
       <NavbarLogo />
-      <NavbarColorModeToggle className="margin-right--md" />
+      {/* <NavbarColorModeToggle className="margin-right--md" /> */}
       <CloseButton />
     </div>
   );

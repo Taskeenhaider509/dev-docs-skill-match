@@ -10,7 +10,7 @@ export default function NavbarSearch({
 }: Props): JSX.Element {
   return (
     <div className={clsx(className, styles.navbarSearchContainer)}>
-      {children}
+      {/* {children} */}
     </div>
   );
 }

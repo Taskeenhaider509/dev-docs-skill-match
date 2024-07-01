@@ -4,11 +4,11 @@ const FooterComponent: React.FC = () => {
     <footer className="footer">
       <div className="footer-row">
         <div className="footer-column footer-first-column">
-          <p className="footer-column-paragraph">
-            <span className="footer-column-paragraph-span">
-            Copyright © 2024 SkillMatch. All Rights Reserved.
-            </span>
-          </p>
+          <span className="footer-column-paragraph-span">
+            <p className="footer-column-paragraph">
+              Copyright © 2024 SkillMatch. All Rights Reserved.
+            </p>
+          </span>
         </div>
         <div className="footer-column footer-second-column">
           <div className="footer-links-row">

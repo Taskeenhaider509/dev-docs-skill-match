@@ -11,7 +11,7 @@ function HomepageHeader() {
   return (
     <header className={clsx("hero hero--primary header-image-bg")}>
       <div className="container input">
-        <span>
+        <span className="header-logo">
           <svg
             style={{width: "100%"}}
             width="330"
