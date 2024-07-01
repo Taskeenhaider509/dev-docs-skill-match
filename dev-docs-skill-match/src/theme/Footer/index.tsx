@@ -15,14 +15,15 @@ function Footer(): JSX.Element | null {
   const {copyright, links, logo, style} = footer;
 
   return (
-    // <FooterLayout
-    //   style={style}
-    //   links={links && links.length > 0 && <FooterLinks links={links} />}
-    //   logo={logo && <FooterLogo logo={logo} />}
-    //   copyright={copyright && <FooterCopyright copyright={copyright} />}
-    // />
-    // <h1> hello this is footer</h1>
+    <>
+    {/* <FooterLayout
+      style={style}
+      links={links && links.length > 0 && <FooterLinks links={links} />}
+      logo={logo && <FooterLogo logo={logo} />}
+      copyright={copyright && <FooterCopyright copyright={copyright} />}
+    /> */}
     <FooterComponent />
+    </>
   );
 }
 
