@@ -3,9 +3,9 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Skill Match',
+  title: 'Skill Match Docs',
   tagline: 'Assess, Advance, Achieve: Your Path to Engineering Excellence',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/Vector.png',
 
   // Set the production url of your site here
   url: 'http://192.168.18.148:3000',

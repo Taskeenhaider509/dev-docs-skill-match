@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -26,6 +26,7 @@
   --search-icon-color: #356f66; 
   --heading-text-color: black;
   --description-text-color: #6f6f6f;
+  --link-hover-text-color: black;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -44,6 +45,7 @@
   --search-icon-color: white;
   --heading-text-color: black;
   --description-text-color: white;
+  --link-hover-text-color: #E3E3E3;
 }
 
 
@@ -188,17 +190,18 @@ body {
 
 /* OverviewComponent Starts */
 .table-radius {
-  -webkit-box-shadow: 0px 0px 9px 1px rgba(135, 135, 135, 1);
+  /* -webkit-box-shadow: 0px 0px 9px 1px rgba(135, 135, 135, 1);
   -moz-box-shadow: 0px 0px 9px 1px rgba(135, 135, 135, 1);
-  box-shadow: 0px 0px 2px 0px rgba(135, 135, 135, 1);
+  box-shadow: 0px 0px 2px 0px rgba(135, 135, 135, 1); */
   display: flex;
   flex-direction: column;
   gap: 13px;
   justify-items: center;
   padding: 20px 0px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  border: 1px solid rgba(135, 135, 135, 1);
+  padding-bottom: 40px !important;
+  /* border-radius: 10px; */
+  /* margin-bottom: 20px; */
+  /* border: 1px solid rgba(135, 135, 135, 1); */
 }
 
 .table-row-component {
@@ -208,7 +211,7 @@ body {
 }
 
 .table-row-component:not(:last-child) {
-  border-bottom: 1px solid rgba(135, 135, 135, 1);
+  /* border-bottom: 1px solid rgba(135, 135, 135, 1); */
   padding-bottom: 16px;
 }
 
@@ -218,14 +221,16 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  color: white;
-  background-color: #367167;
+  color: black;
+  background-color: #EAEEF1;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 10px;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1;
+  font-family: "Inter", sans-serif;
 }
 
 .table-row-content {
@@ -360,6 +365,29 @@ body {
     padding-right: 100px !important;
   }
 }
+
+
+@media only screen and (max-width: 1250px) {
+  .align-landingpage-left {
+    padding-left:  2rem !important;
+  }
+}
+
+
+@media only screen and (max-width: 869px) {
+  .align-landingpage-right {
+    padding-left:  2rem !important;
+  }
+}
+
+
+@media only screen and (min-width: 870px) and (max-width: 1100px) {
+  .align-landingpage-right {
+    padding-right:  0rem !important;
+  } 
+}
+
+
 @media only screen and (max-width: 996px) {
   .navbar-hidden-components {
     display: none !important;
@@ -447,7 +475,7 @@ body {
 @media only screen and (max-width: 930px) {
   .footer-row {
     flex-direction: column-reverse !important;
-    align-items: start !important;
+    align-items: center !important;
     gap: 10px !important;
     max-width: 568px !important;
   }
@@ -567,8 +595,12 @@ body {
   }
 
   .align-landingpage-right {
-    margin-left: 1rem !important;
+    margin-left: 0rem !important;
     padding-top: 0rem !important;
+  }
+
+  .align-landingpage-right {
+    padding-right: 1rem !important;
   }
 
   .featureTitle {
@@ -623,16 +655,16 @@ body {
   }
 
   .footer-column-paragraph {
-     margin-bottom: 22px;
+     padding-bottom: 22px !important;
     /* border-top: 1px solid black !important; */
     padding-top: 12px !important;
-    padding-left: 32px !important;
+    padding-left: 66px !important;
     /* padding-right: 60px !important; */
     width: 100% !important ;
   }
 
   .footer-first-column {
-    padding-bottom: 30px !important;
+    padding-bottom: 10px !important;
     width: 100% !important;
     margin-left: 0px !important;
     margin-top: 0px !important;
@@ -656,9 +688,9 @@ body {
     width: 100% !important;
   }
 
-  .footer-icons-row {
+  /* .footer-icons-row {
     padding-left: 20px !important;
-  }
+  } */
 }
 
 @media only screen and (max-width: 375px) {
@@ -666,17 +698,17 @@ body {
     width: 320px !important;
   }
 
+  .searchIcon {
+    margin-left: 0.4rem !important;
+  }
+
   .featureCard {
     padding: 10px !important;
   }
 
-  /* .footer-column-paragraph {
-    padding-left: 7px !important;
-  } */
-
-  /* .footer-column-paragraph {
-    padding-left: px !important;
-  } */
+  .footer-column-paragraph {
+   padding-left: 40px !important;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -684,7 +716,9 @@ body {
   .footer-icons-row {
     width: 250px !important;
     text-align: center !important;
+    margin-right: 55px !important;  
   }
+
 
   .footer-links-row {
     width: 325px !important;
@@ -696,14 +730,22 @@ body {
     padding-right: 0rem !important;
   }
 
-  /* .s */
-
   .landing-page-cards-heading {
-    padding-left: 20px !important;
+    padding-left: 25px !important;
+    font-size: 24px !important;
+    font-weight: 700 !important;
   }
 
   .searchBar {
     width: 275px !important;
+  }
+
+  .footer-first-column {
+      padding-left: 20px !important;
+  }
+
+  .footer-column-paragraph-span {
+    padding-bottom: 20px !important;
   }
 }
 
@@ -788,9 +830,6 @@ body {
   text-decoration: none;
 }
 
-/* .align-landingpage-right {
-  margin-left: 5rem;
-} */
 /* LandingPageSection Ends */
 
 /* ImproveLanding Section Starts */
@@ -1173,4 +1212,71 @@ body {
 .searchInput {
   background: var(--background-color);
 }
+
+.linkhover {
+  color: var(--link-hover-text-color) !important;
+}
+
+.anchorlink{
+  text-decoration-color: var(--link-hover-text-color) !important;
+} 
+
+.link-icon-arrow {
+  fill: var(--link-hover-text-color) !important;;
+}
+
+.theme-edit-this-page {
+  display: none;
+}
+
+.pagination-nav__link--prev .pagination-nav__label::before {
+  content: "" !important;
+}
+
+.pagination-nav__link--next .pagination-nav__label::after {
+  content: "" !important; 
+}
+
+.pagination-nav__link--prev .pagination-nav__sublabel::before {
+  content: url("../../static/img/Vector\ \(1\).svg");
+  margin-right: 10px !important;
+}
+.pagination-nav__link--next .pagination-nav__sublabel::after {
+  content: url("../../static/img/Vector.svg");
+  margin-left: 10px !important;
+}
 /* Dark Theme Ends */
+
+.table-row-left-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+
+}
+
+.line{
+  position: absolute;
+  width: 0px;
+  border: 1px solid #EAEEF1;
+  /* background-color: #000; */
+  height: 25px;
+  top:32px;
+  margin-right: 9px;
+}
+
+li::marker {
+  color: #CED3DB;
+}
+
+.list-style-item{
+  width: 160px;
+}
+
+.menu__list-item-collapsible {
+  margin-top: 12px !important;
+}
+
+.side-bar-icons {
+  padding-right: 15px !important;
+}

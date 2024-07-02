@@ -12,7 +12,7 @@ export default function PaginatorNavLink(props: Props): JSX.Element {
         isNext ? 'pagination-nav__link--next' : 'pagination-nav__link--prev',
       )}
       to={permalink}>
-      {subLabel && <div className="pagination-nav__sublabel">{subLabel}</div>}
+      {subLabel && <div className="pagination-nav__sublabel">{subLabel} </div>}
       <div className="pagination-nav__label">{title}</div>
     </Link>
   );

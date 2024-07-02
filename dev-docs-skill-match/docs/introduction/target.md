@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+title: Target Audience
 ---
 
 # Target Audience
@@ -60,33 +61,3 @@ Individuals with technical skills who are looking for specialized roles in softw
 - **Relevant Job Listings:** Access to job opportunities that match their technical expertise.
 
 Skillmatch.tech caters to a diverse audience, providing tailored features and tools to meet the needs of both job seekers and employers, ensuring an efficient and effective job matching process.
-
-:::warning
-
-Here is the information why
-
-:::
-
-:::note
-
-Here is the information why
-
-:::
-
-:::info
-
-Here is the information why
-
-:::
-
-:::tip
-
-Here is the information why
-
-:::
-
-:::danger
-
-Here is the information why
-
-:::

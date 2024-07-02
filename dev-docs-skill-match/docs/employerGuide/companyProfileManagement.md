@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+title: Profile Management
 ---
 
 # Company Profile Management
