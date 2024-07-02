@@ -69,7 +69,7 @@ export default function NavbarContent(): JSX.Element {
         // TODO stop hardcoding items?
         <>
           <NavbarLogo />
-          {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}                       
+          {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
           <NavbarItems items={leftItems} />
         </>
       }
@@ -84,11 +84,19 @@ export default function NavbarContent(): JSX.Element {
             </NavbarSearch>
           )}
           <div className="navbar-section navbar-hidden-components">
-            <a href="#" className="navbar-link">
+            <a
+              href="https://www.skillmatch.tech/contact-us"
+              target="_blank"
+              className="navbar-link textdarktheme"
+            >
               Submit a ticket
             </a>
-            <button className="navbar-button-request">Request A Demo</button>
-            <button className="navbar-button-sign-in">Sign in</button>
+            <a href="https://www.skillmatch.tech/book-demo" target="_blank">
+              <button className="navbar-button-request">Request A Demo</button>
+            </a>
+            <a href="https://www.skillmatch.tech/signin" target="_blank">
+              <button className="navbar-button-sign-in">Sign in</button>
+            </a>
           </div>
           <NavbarColorModeToggle className={styles.colorModeToggle} />
         </>

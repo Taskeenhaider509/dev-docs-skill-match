@@ -60,8 +60,6 @@ const config: Config = {
       indexName: 'dev_docs_skillmatch',
       contextualSearch: true,
       appId: 'R43OG4IFDK',
-      // other search parameters
-
     },
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
