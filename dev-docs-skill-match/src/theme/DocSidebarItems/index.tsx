@@ -13,7 +13,7 @@ function DocSidebarItems({items, ...props}: Props): JSX.Element {
     <DocSidebarItemsExpandedStateProvider>
       {visibleItems.map((item, index) => (
         <div>
-        {item.type === "link"?<div style={{display:"flex",alignItems:'center',justifyContent:'center'}}>
+        {item.type === "link"?<div style={{display:"flex", paddingLeft: "17px"}}>
           <div style={{width:'2px',backgroundColor:"#CED3DB",height:'40px',position:'relative',right:'9px'}}></div>
           <DocSidebarItem key={index} item={item} index={index} {...props} />
         </div>:<DocSidebarItem key={index} item={item} index={index} {...props} />}
