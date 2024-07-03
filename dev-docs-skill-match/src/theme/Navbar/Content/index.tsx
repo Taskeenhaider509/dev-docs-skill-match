@@ -1,4 +1,4 @@
-import React, { type ReactNode } from "react";
+import React, { useEffect, useState, type ReactNode } from "react";
 import { useThemeConfig, ErrorCauseBoundary } from "@docusaurus/theme-common";
 import {
   splitNavbarItems,
@@ -10,6 +10,7 @@ import SearchBar from "@theme/SearchBar";
 import NavbarMobileSidebarToggle from "@theme/Navbar/MobileSidebar/Toggle";
 import NavbarLogo from "@theme/Navbar/Logo";
 import NavbarSearch from "@theme/Navbar/Search";
+import {useLocation} from '@docusaurus/router'
 
 import styles from "./styles.module.css";
 
@@ -47,6 +48,14 @@ function NavbarContentLayout({
   left: ReactNode;
   right: ReactNode;
 }) {
+//   const location = useLocation();
+// const [path, setPath] = useState("")
+//   useEffect(() => {
+//     const isDocsPath = /^\/docs\/.+/.test(location.pathname);
+//     console.log(isDocsPath, "path");
+//     setPath(isDocsPath)
+//   }, [location.pathname]);
+// style={{position:"relative",right:path?"14%":""}}
   return (
     <div className="navbar__inner">
       <div className="navbar__items navbar-toggle-items">{left}</div>
