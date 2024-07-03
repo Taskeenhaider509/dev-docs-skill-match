@@ -49,6 +49,18 @@
 }
 
 
+.columnLayout {
+  max-width: 1550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar__inner {
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 body {
   font-family: "Urbanist", sans-serif;
@@ -528,6 +540,22 @@ body {
   .footer-icons-row {
     padding-top: 16px !important;
   }
+
+
+}
+
+
+
+@media only screen and (min-width: 441px) and (max-width: 660px){
+      .searchBar {
+        width: 430px !important;
+      }
+
+      .header-icon-heading {
+        width: 425px;
+      }
+
+
 }
 
 @media only screen and (max-width: 440px) {
@@ -535,6 +563,11 @@ body {
     background-image: url("../../static/img/Header_image.png");
     background-size: cover !important;
     height: 550px !important;
+  }
+
+  .columnLayout {
+    position: relative;
+    right: 22px;
   }
 
   .featureCard {
@@ -719,6 +752,13 @@ body {
     margin-right: 55px !important;  
   }
 
+
+  .navbar-toggle-items {
+    gap: 10px;
+  }
+  .footer-first-column {
+    padding-right: 20px;
+  }
 
   .footer-links-row {
     width: 325px !important;

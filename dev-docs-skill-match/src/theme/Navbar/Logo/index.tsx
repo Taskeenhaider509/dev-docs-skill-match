@@ -11,7 +11,7 @@ export default function NavbarLogo(): JSX.Element {
     <span>
       <svg
         style={{ width: "100%" }}
-        width="270"
+        width="230"
         height="35"
         viewBox="0 0 330 49"
         fill="none"

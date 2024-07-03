@@ -1,5 +1,4 @@
 import React from "react";
-
 interface ColumnProps {
   heading: string;
   paragraph: string;
